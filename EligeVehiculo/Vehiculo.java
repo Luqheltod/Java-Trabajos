@@ -24,7 +24,7 @@ package VehiculosAbstract;
         
     };
 
-    public String getColor() { //el metodo getcolor comun para todas las demas clases 
+    public String getColor() { //el metodo getcolor comun para todas las demas clases.
         return color;
     }
 
