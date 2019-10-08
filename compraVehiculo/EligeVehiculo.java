@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package EligeVehiculo;
 import java.util.*;
 import javax.swing.*;
@@ -17,9 +13,10 @@ public class EligeVehiculo {
        
         
      
+       // en las siguientes lineas compararemos mendiante un while si lo introducido es de tipo int, se repetira hasta que se introduzca un int
+        // despues se seguira reptiendo hasta que sea un valor numerico valido. 
        
-       
-       Scanner entrada1 = new Scanner(System.in);
+       Scanner entrada1 = new Scanner(System.in);  
 
         int seleccion;
         do {
@@ -42,14 +39,14 @@ public class EligeVehiculo {
        
       
        
-     
+     // mediante este switch creamos el objeto que queramos dependiendo de la decision del usuario y le preguntamos los extras que necesita
     switch (seleccion) {
         
         case 1 : 
             Coche coche = new Coche();
             coche.setColor(JOptionPane.showInputDialog("Elige el color de tu coche"));
             String asientos = JOptionPane.showInputDialog("¿Lleva asientos de cuero? s/n");
-            while(!"s".equalsIgnoreCase(asientos) && !"n".equalsIgnoreCase(asientos)){
+            while(!"s".equalsIgnoreCase(asientos) && !"n".equalsIgnoreCase(asientos)){ //comparamos strings, si es invalido, se vuelve a preguntar.
                 asientos = JOptionPane.showInputDialog("Conteste unicamente con una S o una N");
             }
             coche.setAsientos(asientos);
@@ -58,7 +55,7 @@ public class EligeVehiculo {
                 climatizador = JOptionPane.showInputDialog("Conteste unicamente con una S o una N");
             }
             coche.setClimatizador(climatizador);
-           coche.datosCoche();
+           coche.datosCoche(); //metodo descriptivo general
            break; 
            
         case 2 : 
@@ -90,11 +87,11 @@ public class EligeVehiculo {
                 ruedas = JOptionPane.showInputDialog("Conteste unicamente con una S o una N");
             }       
             moto.setRuedas(ruedas);
-            moto.datosMoto();;
+            moto.datosMoto();;  
            break;
     }
     
-        System.out.println("Gracias por su compra :D");
+        System.out.println("Gracias por su compra :D");  //final del programa
     }
     
 }
