@@ -1,15 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package EligeVehiculo;
 
 /**
  *
  * @author Gsancho
  */
-public class Camion {
+public class Camion {  //se declaran los parametros de la clase. De serie, asientos y climatizador es false.
     
     private int peso;
     
@@ -27,19 +23,19 @@ public class Camion {
         precio = 33050;
     }
     
-      public void setColor(String color){
+      public void setColor(String color){ //setter
         
         this.color = color;
         
         
     }
     
-    public String getColor(){
+    public String getColor(){ //getter
         
         return color;
     }
     
-    public void setAsientos(String asientos){
+    public void setAsientos(String asientos){ //metodo que incrementa el precio si los asientos son de cuero.
         
         if(asientos.equalsIgnoreCase("s") ){
            this.asientos = true;
@@ -48,7 +44,7 @@ public class Camion {
            this.precio+= 2000; 
         }}
     
-     public String getAsientos(){
+     public String getAsientos(){ //metodo descriptivo
          
          if(asientos==true){
              
@@ -60,7 +56,7 @@ public class Camion {
         
     }
      
-     public void setClimatizador(String climatizador){
+     public void setClimatizador(String climatizador){ //metodo que incrementa el precio si lleva climatizador.
          
          if(climatizador.equalsIgnoreCase("s")){
              this.climatizador = true;
@@ -69,7 +65,7 @@ public class Camion {
              this.precio+=1500;
          }}
          
-      public String getClimatizador(){
+      public String getClimatizador(){ //metodo descriptivo
           if(climatizador == true){
               return "tiene climatizador";
       }   else{
@@ -77,7 +73,7 @@ public class Camion {
           }
      }
   
-     public double getPrecio(){
+     public double getPrecio(){ //getter
          
          return precio;
      }
@@ -85,7 +81,7 @@ public class Camion {
     
     
     
-   public void datosCamion (){
+   public void datosCamion (){ //metodo descriptivo general
         System.out.println("El camion es " + color + " " + getAsientos() + " " + getClimatizador() + " tiene un peso de " + peso
                 + " y tiene un precio final de " + getPrecio() + " €");
     }
