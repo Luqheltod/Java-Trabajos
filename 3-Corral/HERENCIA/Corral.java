@@ -3,7 +3,7 @@ package HERENCIA;
 
 /**
  *
- * @author Gsancho
+ * @author Gsancho 
  */
 public class Corral {
     
@@ -15,7 +15,7 @@ public class Corral {
         animales[1] = new Gallina ("Manuela");
         animales[2] = new Perro ("Black");
         animales[3] = new Perro ("Dirty");
-        animales[4] = new Gato ("Tonet");
+        animales[4] = new Gato ("Tonelete");
     }
     
     public void simulaUnDia(){
