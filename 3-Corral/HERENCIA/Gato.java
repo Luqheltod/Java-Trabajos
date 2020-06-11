@@ -3,7 +3,7 @@ package HERENCIA;
 
 /**
  *
- * @author Gsancho
+ * @author Gsancho g
  */
 public class Gato extends AnimalAbstracto {
 
